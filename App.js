@@ -46,7 +46,6 @@ export default function App() {
 
   useEffect(async () => {
     checkFirstLauch();
-    AsyncStorage.clear();
   }, []);
 
   const checkFirstLauch = async () => {

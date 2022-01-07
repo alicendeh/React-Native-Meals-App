@@ -45,7 +45,7 @@ const DrawerContent = ({ navigation }) => {
         flex: 1,
       }}
     >
-      <StatusBar backgroundColor="#000" style="inverted" />
+      <StatusBar backgroundColor="#fff" style="dark" />
       <ScrollView
         contentContainerStyle={{
           flex: 1,

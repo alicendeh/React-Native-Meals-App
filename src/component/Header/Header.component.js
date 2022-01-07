@@ -69,7 +69,7 @@ const Header = ({
             style={{
               width: "120%",
               backgroundColor: "rgba(0,0,0,0.5)",
-              height: Platform.OS === "ios" ? "220%" : "340%",
+              height: Platform.OS === "ios" ? "223%" : "340%",
               position: "absolute",
               flex: 1,
             }}
