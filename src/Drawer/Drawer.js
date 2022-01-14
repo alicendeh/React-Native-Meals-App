@@ -7,11 +7,9 @@ const DrawerNavigator = createDrawerNavigator();
 const Drawer = () => {
   return (
     <DrawerNavigator.Navigator
-      screenOptions={
-        {
-          // headerShown: false,
-        }
-      }
+      screenOptions={{
+        headerShown: false,
+      }}
     >
       <DrawerNavigator.Screen name="All Recipes" component={BottomNavigation} />
     </DrawerNavigator.Navigator>
