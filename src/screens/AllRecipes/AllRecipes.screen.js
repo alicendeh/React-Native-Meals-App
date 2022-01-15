@@ -13,6 +13,7 @@ import styles from "./AllRecipes.style";
 import { Header } from "../../components";
 
 const renderItem = ({ item }) => {
+  // console.log();
   return (
     <TouchableOpacity
       onPress={() => navigation.navigate("CategoryMeals")}
