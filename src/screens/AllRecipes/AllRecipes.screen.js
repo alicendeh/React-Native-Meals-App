@@ -11,9 +11,11 @@ import {
 import { CATEGORIES } from "../../data/data";
 import styles from "./AllRecipes.style";
 import { Header } from "../../components";
+import { useNavigation } from "@react-navigation/native";
+
+const navigation = useNavigation();
 
 const renderItem = ({ item }) => {
-  // console.log();
   return (
     <TouchableOpacity
       onPress={() => navigation.navigate("CategoryMeals")}
@@ -42,12 +44,7 @@ const AllRecipes = ({ navigation }) => {
         </SafeAreaView>
       )}
 
-      <FlatList
-        data={CATEGORIES}
-        numColumns={2}
-        // renderItem={renderItem.bind(this, navigation, item)}_
-        renderItem={renderItem}
-      />
+      <FlatList data={CATEGORIES} numColumns={2} renderItem={renderItem} />
     </View>
   );
 };
