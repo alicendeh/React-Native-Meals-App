@@ -11,9 +11,7 @@ import {
 import { CATEGORIES } from "../../data/data";
 import styles from "./AllRecipes.style";
 import { Header } from "../../components";
-import { useNavigation } from "@react-navigation/native";
-
-const navigation = useNavigation();
+// import { useNavigation } from "@react-navigation/native";
 
 const renderItem = ({ item }) => {
   return (
